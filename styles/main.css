@@ -1,0 +1,244 @@
+html,
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Dosis;
+	color: #676767;
+}
+#navigation {
+	background: #0ba1f9;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+}
+.logo {
+	font-family: 'Otomanopee One', sans-serif;
+	padding: 10px;
+	font-size: 1.4rem;
+	color: white;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+.logo:hover {
+	color: black;
+}
+.navbar {
+	display: flex;
+	list-style: none;
+	padding: 0 30px;
+}
+.nav-item {
+	padding: 4px 20px;
+}
+.nav-item a {
+	color: white;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+.nav-item a:hover {
+	color: black;
+}
+
+/* hero section */
+#hero {
+	height: 100vh;
+	margin: 40px auto;
+}
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-item {
+	padding: 30px;
+	width: 50%;
+}
+.image-container {
+	max-width: 550px;
+	padding: 30px;
+}
+.image {
+	width: 100%;
+	height: 100%;
+}
+.lead {
+	font-size: 3rem;
+	margin: 0;
+}
+.text {
+	font-size: 1.2rem;
+	color: #333;
+}
+.button-container {
+	margin-top: 50px;
+}
+.button {
+	background: rgb(165, 212, 238);
+	padding: 8px 20px;
+	position: relative;
+	margin-top: 20px;
+	border-radius: 50px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.1rem;
+	background: linear-gradient(
+		246deg,
+		rgba(165, 212, 238, 1) 0%,
+		rgba(8, 152, 248, 1) 100%
+	);
+	border: 1px solid transparent;
+	transition: all 0.5s ease;
+}
+.button:hover {
+	border-color: #0ba1f9;
+	background: transparent;
+	color: #0ba1f9;
+}
+.colored {
+	background: linear-gradient(
+		246deg,
+		rgba(165, 212, 238, 1) 0%,
+		rgba(8, 152, 248, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#about {
+	background: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin: auto;
+}
+#about .image-container {
+	position: relative;
+	width: 100%;
+	height: 280px;
+}
+
+#about .image-container .image {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	bottom: -30px;
+}
+.about-lead {
+	margin: 0;
+	font-size: 1.8rem;
+	color: #676767;
+}
+
+#recipe {
+	margin: 40px auto;
+	max-width: 80%;
+	margin: auto;
+}
+.recipe-top {
+	text-align: center;
+	margin: 30px auto;
+	max-width: 600px;
+}
+.recipe-head {
+	font-size: 1.8rem;
+	color: #676767;
+	text-transform: capitalize;
+}
+.card {
+	width: 33%;
+	height: 100%;
+	margin: 20px;
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+}
+.card-image {
+	width: 100%;
+	height: 200px;
+}
+.card-image img {
+	object-fit: cover;
+	width: 93%;
+	border-radius: 5%;
+	margin: 10px;
+}
+.card-title {
+	font-size: 1.2rem;
+	padding: 20px 20px;
+	padding-bottom: 0px;
+}
+.card .text {
+	padding: 8px 20px;
+	padding-top: 0px;
+}
+
+/* offer section */
+
+#offer {
+	background: url(../images/cover.png) #0ba1f9;
+	background-blend-mode: multiply;
+	height: 400px;
+	color: white;
+	margin: 100px 0;
+	position: relative;
+}
+
+.offer-head {
+	font-size: 3rem;
+	margin: 0;
+}
+.item {
+	font-size: 2rem;
+	margin: 0;
+}
+.del {
+	font-weight: bold;
+	color: red;
+}
+
+#offer .flex-item {
+	padding-left: 100px;
+	padding-top: 130px;
+}
+.offer-image {
+	position: absolute;
+	bottom: -0px;
+	top: 0px;
+}
+.order {
+	font-size: 2rem;
+	position: absolute;
+	top: 160px;
+}
+.time-box {
+	background-color: #0ba1f9;
+	padding: 3px 7px;
+	border-radius: 8px;
+	margin-right: 2px;
+}
+
+/* footer */
+#footer {
+	background-color: #0b0d17;
+	margin: 0;
+}
+
+.footer-head {
+	text-align: center;
+	padding-top: 30px;
+	color: white;
+	font-size: 2rem;
+	margin-bottom: 0;
+}
+
+#footer .text {
+	padding: 10px;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 40px;
+}
